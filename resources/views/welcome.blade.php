@@ -9,23 +9,9 @@
 </head>
 @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 
-<body>
+<body class="welcome-background">
 
-    <head>
-        <div class="container text-center">
-            <div class="row align-items-start">
-                <div class="col">
-                    One of three columns
-                </div>
-                <div class="col">
-                    One of three columns
-                </div>
-                <div class="col">
-                    One of three columns
-                </div>
-            </div>
-        </div>
-    </head>
+
     <div>
         this is going to be the welcome page ,is going to have a header
     </div>
