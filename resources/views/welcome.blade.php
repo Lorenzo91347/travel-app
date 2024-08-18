@@ -16,7 +16,7 @@
 
 <body class="welcome-background">
     <main>
-        <div class="row">
+        <div class="row h-100">
             <div class="col">
                 <div class="cointainer text-center text-white p-5 welcome-left-col">
                     <h1 class="welcome-title">

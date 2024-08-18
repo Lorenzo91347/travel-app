@@ -11,11 +11,20 @@
 
 <body class="welcome-background d-flex">
 
-    <div class="container text-center text-white white-back">
-        <h3>ENTER YOU CREDENTIALS</h3>
-        <form action="POST" action="{{ route('login') }}">
-            @csrf
-        </form>
+    <div class="mx-auto text-center text-white tran-back d-flex flex-column justify-content-center">
+        <div class="d-flex flex-column mb-5 auth-block">
+            <h2>ENTER YOU CREDENTIALS</h2>
+            <form class="mx-auto" action="POST" action="{{ route('login') }}">
+                @csrf
+
+                <input class="form-control form-control-lg my-3 text-center rounded-pill" type="text"
+                    placeholder="USERNAME" aria-label=".form-control-lg example">
+                <input class="form-control form-control-lg my-3 text-center rounded-pill" type="text"
+                    placeholder="PASSWORD" aria-label=".form-control-lg example">
+                <div><a href="{{ route('login') }}" class="btn btn-primary my-1 rounded-pill w-50">GET ME IN!</a>
+                </div>
+            </form>
+        </div>
     </div>
 
 </body>

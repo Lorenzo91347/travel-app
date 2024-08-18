@@ -1,4 +1,10 @@
 @import 'resources/scss/common';
-@import 'resources/scss/pages/login';
+@import 'resources/scss/pages/AUTH';
 @import 'resources/scss/pages/welcome';
 @import 'bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
