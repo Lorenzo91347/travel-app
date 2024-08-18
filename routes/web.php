@@ -6,18 +6,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', function () {
+Route::get('/auth/login', function () {
     return view('auth.login');
 })->name('login');
 
-Route::get('/signup', function () {
+Route::get('/auth/signup', function () {
     return view('auth.signup');
 })->name('signup');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
-
-Route::get('/milestone', function () {
-    return view('travel-pages/milestone');
-});
+require __DIR__ . '/auth.php';
