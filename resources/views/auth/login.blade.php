@@ -23,15 +23,15 @@
                     </ul>
                 </div>
             @endif
-            <form class="mx-auto" method="POST" action="{{ route('login') }}">
+            <form class="mx-auto" method="POST" action="{{ route('auth.login') }}">
                 @csrf
 
                 <input class="form-control form-control-lg my-3 text-center rounded-pill" id="email" name="email"
-                    type="email" placeholder="EMAIL" aria-label=".form-control-lg example">
+                    type="email" placeholder="EMAIL" aria-label=".form-control-lg">
                 <input class="form-control form-control-lg my-3 text-center rounded-pill" id="name" name="name"
-                    type="text" placeholder="USERNAME" aria-label=".form-control-lg example">
+                    type="text" placeholder="USERNAME" aria-label=".form-control-lg">
                 <input class="form-control form-control-lg my-3 text-center rounded-pill" id="password" name="password"
-                    type="password" placeholder="PASSWORD" aria-label=".form-control-lg example">
+                    type="password" placeholder="PASSWORD" aria-label=".form-control-lg">
                 <div>
                     <input type="checkbox" name="remember" id="remember">
                     <label for="remember">Remember Me</label>

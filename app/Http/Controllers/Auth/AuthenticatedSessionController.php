@@ -27,7 +27,7 @@ class AuthenticatedSessionController extends Controller
             $request->session()->regenerate();
 
             // Redirect to the dashboard
-            return redirect('/dashboard');
+            return redirect('map');
         }
 
         // If login failed, redirect back to the login page with an error

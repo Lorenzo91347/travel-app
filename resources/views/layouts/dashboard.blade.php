@@ -10,6 +10,7 @@
 
 <body>
     <div>This is the dashboard</div>
+    @yield('content')
 
 </body>
 

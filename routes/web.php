@@ -10,19 +10,24 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+    return view('layouts.dashboard');
+})->middleware('auth')->name('dashboard');
 
-Route::get('/auth/login', function () {
+Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
 
-Route::post('/auth/login', [AuthenticatedSessionController::class, 'store']);
+Route::post('/auth/login', [AuthenticatedSessionController::class, 'store'])->name('auth.login');
 
-Route::get('/auth/signup', function () {
+Route::get('/signup', function () {
     return view('auth.signup');
 })->name('signup');
 
 Route::post('/auth/signup', [RegisteredUserController::class, 'register']);
 
-require __DIR__ . '/auth.php';
+
+Route::get('/map', function () {
+    return view('travelpages.map');
+})->name('map');
+
+//require __DIR__ . '/auth.php';

@@ -9,10 +9,6 @@ use App\Http\Controllers\Controller;
 
 class RegisteredUserController extends Controller
 {
-    public function showRegistrationForm()
-    {
-        return view('auth.signup');
-    }
 
     public function register(Request $request)
     {
