@@ -27,8 +27,7 @@ Route::post('/auth/signup', [RegisteredUserController::class, 'register']);
 
 
 Route::get('/map', function () {
-    $apiKey = env('API_KEY');
-    return view('travelpages.map', compact($apiKey));
+    return view('travelpages.map');
 })->name('map');
 
 //require __DIR__ . '/auth.php';

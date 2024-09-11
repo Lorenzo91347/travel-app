@@ -1,6 +1,3 @@
-<?php
-$apiKey = env('API_KEY');
-?>
 @extends('layouts.dashboard')
 
 <!DOCTYPE html>
@@ -19,7 +16,7 @@ $apiKey = env('API_KEY');
         <div>this is the current page!</div>
         <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
             referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed/v1/place?key={{ $apiKey }}
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCd9JOqb8eKs4SWT5lCUAvNo_qiJyFMKh4
     &q=Space+Needle,Seattle+WA">
         </iframe>
     @endsection
